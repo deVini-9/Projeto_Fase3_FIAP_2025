@@ -139,11 +139,11 @@ ORDER BY nr_ocorrencia_sac;
 ```
 
 #### Bloco anónimo PL/SQL responsável por:
-- Ler dados das tabelas mc_sgv_sac, mc_produto, mc_cliente e tabelas de endereço.
-- Transformar o tipo de SAC (coluna tp_sac) para uma descrição textual (Sugestão, Dúvida, Elogio).
-- Calcular o valor do lucro unitário do produto.
-- Inserir os dados processados na tabela mc_sgv_ocorrencia_sac.
-- Inclui tratamento de exceções e controlo de transação (COMMIT/ROLLBACK).
+> - Ler dados das tabelas mc_sgv_sac, mc_produto, mc_cliente e tabelas de endereço.
+> - Transformar o tipo de SAC (coluna tp_sac) para uma descrição textual (Sugestão, Dúvida, Elogio).
+> - Calcular o valor do lucro unitário do produto.
+> - Inserir os dados processados na tabela mc_sgv_ocorrencia_sac.
+> - Inclui tratamento de exceções e controlo de transação (COMMIT/ROLLBACK).
 
 ### DQL_categoria_produto_chamados.sql:
 ```SQL
@@ -181,27 +181,27 @@ Consulta SQL (DQL) que exibe todas as categorias de produtos e a contagem total 
 Os resultados são ordenados pelo maior número de chamados e, em seguida, pelo código da categoria.
 
 #### Consulta_categorias_e_quantidade_de_chamados_associados:
-- Consulta SQL (DQL) para verificar os dados inseridos na tabela mc_sgv_ocorrencia_sac após a execução do bloco PL/SQL.
-- Seleciona todas as colunas da tabela mc_sgv_ocorrencia_sac e ordena pelo nr_ocorrencia_sac.
+> - Consulta SQL (DQL) para verificar os dados inseridos na tabela mc_sgv_ocorrencia_sac após a execução do bloco PL/SQL.
+> - Seleciona todas as colunas da tabela mc_sgv_ocorrencia_sac e ordena pelo nr_ocorrencia_sac.
 
 ### Documentos de Evidência:
 
 #### 1_2_evidências_PL_SQL.docx:
-- Contém capturas de ecrã demonstrando a conexão com o SGBD Oracle, as tabelas criadas e a execução bem-sucedida do bloco PL/SQL de carga de dados, exibindo os dados inseridos na tabela mc_sgv_ocorrencia_sac.
+> - Contém capturas de ecrã demonstrando a conexão com o SGBD Oracle, as tabelas criadas e a execução bem-sucedida do bloco PL/SQL de carga de dados, exibindo os dados inseridos na tabela mc_sgv_ocorrencia_sac.
 
 #### 1_3_evidências_Consulta_categorias_e_quantidade_de_chamados_associados.docx:
-- Apresenta evidências da execução da consulta de verificação dos dados na tabela mc_sgv_ocorrencia_sac.
+> - Apresenta evidências da execução da consulta de verificação dos dados na tabela mc_sgv_ocorrencia_sac.
 
 #### 1_4_evidências_teste_DQL_categoria_produto_chamados.docx:
-- Demonstra a execução bem-sucedida da consulta DQL que lista as categorias e a quantidade de chamados associados.
+> - Demonstra a execução bem-sucedida da consulta DQL que lista as categorias e a quantidade de chamados associados.
 
 ### Análise LGPD e Proteção de Dados (1_5_Template_Fase3_Grupo7.docx e 1_5_Template_Fase3_Grupo7.pdf):
 
 #### Documento que aborda:
-- O papel da TI em relação à LGPD, tanto nas tarefas internas da TI quanto na plataforma de eCommerce da "Melhores Compras".
-- Recomendações práticas de proteção aos dados (ex: criptografia, controlo de acesso).
-- Estratégias de anonimização de dados de clientes, com justificativas.
-- Inclui referências e um glossário de termos relevantes.
+> - O papel da TI em relação à LGPD, tanto nas tarefas internas da TI quanto na plataforma de eCommerce da "Melhores Compras".
+> - Recomendações práticas de proteção aos dados (ex: criptografia, controlo de acesso).
+> - Estratégias de anonimização de dados de clientes, com justificativas.
+> - Inclui referências e um glossário de termos relevantes.
 
 #### Verificação das Evidências:
-- Os ficheiros .docx contêm capturas de ecrã que demonstram a execução e os resultados obtidos.
+> - Os ficheiros .docx contêm capturas de ecrã que demonstram a execução e os resultados obtidos.
